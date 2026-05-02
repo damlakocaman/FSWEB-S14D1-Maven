@@ -1,4 +1,4 @@
-import org.apache.http.HttpResponse;
+
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -56,7 +56,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
 
         double score = (double) success / (success + failure);
         String userId = "191041";
-
+  
         JSONObject json = new JSONObject();
         json.put("score", score);
         json.put("taskId", taskId);
@@ -71,7 +71,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
             StringEntity params = new StringEntity(result);
             request.addHeader("content-type", "application/json");
             request.setEntity(params);
-            HttpResponse response = httpClient.execute(request);
+            
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
@@ -81,3 +81,4 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
 
 
 }
+  

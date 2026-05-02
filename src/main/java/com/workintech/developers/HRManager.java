@@ -59,7 +59,7 @@ public class HRManager extends Employee {
         System.out.print("Bu senior pozisyonu dolu");
         return;
       }
-
+    
       if(index<0) {
         System.out.println("index degeri hatali");
         return;

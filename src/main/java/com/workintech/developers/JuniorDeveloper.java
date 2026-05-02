@@ -8,3 +8,4 @@ public class JuniorDeveloper extends Employee{
     System.out.println("JuniorDeveloper is working");
    }
 }
+   

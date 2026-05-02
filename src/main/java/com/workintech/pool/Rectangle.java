@@ -14,7 +14,7 @@ public class Rectangle {
    public void setWidth(int width){
     if(width < 0) {
         width=0;
-
+  
     }
 
     this.width=width;

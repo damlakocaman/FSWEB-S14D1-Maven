@@ -8,3 +8,4 @@ public class MidDeveloper extends Employee{
     System.out.println("MidDeveloper is working");
    }
 }
+  
