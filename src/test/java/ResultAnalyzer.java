@@ -8,7 +8,7 @@ import org.junit.jupiter.api.extension.AfterAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.TestWatcher;
 
-import java.io.IOException;
+import java.io.IOException;      
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -71,7 +71,7 @@ public class ResultAnalyzer implements TestWatcher, AfterAllCallback {
             StringEntity params = new StringEntity(result);
             request.addHeader("content-type", "application/json");
             request.setEntity(params);
-HttpResponse response = httpClient.execute(request);            
+            HttpResponse response = httpClient.execute(request);  
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
